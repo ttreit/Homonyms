@@ -6,7 +6,7 @@ Create an app that can access the Treit homonym list on iPhones.
 ## Problem
 Treits like to discover homonyms but it's hard to keep track of them all across family members. We need a central repository for discovered homonyms.
 
-## Definition of homonym
+## Definition of Homonym
 For the purose of this app, a homonym is defined in the Treit manner as:
 
 *Two or more words having the same pronunciation but different spellings and meanings. For example, rap and wrap.*
@@ -22,6 +22,10 @@ Commercialization, or expansion beyond a simple tracking app.
 ## Milestones
 June 1 - Propose language and tools that will be used to create the app.
 *Exploring Kivy/Python solution - May 22. Kivy probably not what I want, researching alternatives including BeeWare Project*
+
+**Final decision is to write this app in Swift for iOS**
+
+June 1 - Finish Swift Tutorials
 
 June 10th - App can read centralized list
 
@@ -62,7 +66,9 @@ Give to Treits
 Fix probelems they find.
 
 ---
-## Development Challenges
-May 22 - tried installing Kivy on Mac OS X. Can not get Kivy to run. Others have had similar issues. Before spending time troubleshooting looked up other options. Found out Kivy does not suppot ios "look and feel" but rather a custom UI, which is not wht I want. Now researching BeeWare project. 
+## Development Tools Decisions
+May 22 - tried installing Kivy on Mac OS X. Can not get Kivy to run. Others have had similar issues. Before spending time troubleshooting looked up other options. Found out Kivy does not suppot iOS "look and feel" but rather a custom UI, which is not what I want. Now researching BeeWare project. BeeWare looks promising but is still pretty new. Best, most stable option is just to use Swift.
 
-Discovering that writing ios apps in Python is still a relatively new field. May have to learn Swift.
+Discovering that writing iOS apps in Python is still a relatively new field. May have to learn Swift.
+
+Have decided to learn Swift.
