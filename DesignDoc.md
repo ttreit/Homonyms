@@ -17,8 +17,11 @@ June 1 - Propose language and tools that will be used to create the app.
 *Exploring Kivy/Python solution - May 22*
 
 June 10th - App can read centralized list
+
 June 30th - App can write to centralized list.
+
 July 15th - Beta version installed on Treit phones.
+
 August 1 - v 1.0 tested and shipped
 
 ## Proposed Solution
