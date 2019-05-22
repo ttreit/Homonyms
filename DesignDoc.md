@@ -6,6 +6,13 @@ Create an app that can access the Treit homonym list on iPhones.
 ## Problem
 Treits like to discover homonyms but it's hard to keep track of them all across family members. We need a central repository for discovered homonyms.
 
+## Definition of homonym
+For the purose of this app, a homonym is defined in the Treit manner as:
+
+*Two or more words having the same pronunciation but different spellings and meanings. For example, rap and wrap.*
+
+Note that technically a homonym in English may include words with the same spelling but different meanings. These are not Treit homonyms. 
+
 ## Goals
 The app should work on iPhones and store data in a central repository so all Treits can access the current list of homonyms. The base list will be imported from Mom's 75th birthday yellow pad.
 
