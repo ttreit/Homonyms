@@ -14,7 +14,7 @@ Commercialization, or expansion beyond a simple tracking app.
 
 ## Milestones
 June 1 - Propose language and tools that will be used to create the app.
-*Exploring Kivy/Python solution - May 22*
+*Exploring Kivy/Python solution - May 22. Kivy probably not what I want, researching alternatives including BeeWare Project*
 
 June 10th - App can read centralized list
 
@@ -28,10 +28,6 @@ August 1 - v 1.0 tested and shipped
 V 1.0 Create an app that will read the stored  homonym list and can display an alphabetical list of all discovered homonyms. 
 
 V 1.1 add search feature
-
-## Test Cases
-Give to Treits
-Fix probelems they find.
 
 ## Use Cases
 ### Search for Homonyms
@@ -52,4 +48,14 @@ Fix probelems they find.
 ### Add Users
 *Actor* Admin
 
-*Description* - Add users who can access the list.
+**Description** - Add users who can access the list.
+
+## Test Cases
+Give to Treits
+Fix probelems they find.
+
+---
+## Development Challenges
+May 22 - tried installing Kivy on Mac OS X. Can not get Kivy to run. Others have had similar issues. Before spending time troubleshooting looked up other options. Found out Kivy does not suppot ios "look and feel" but rather a custom UI, which is not wht I want. Now researching BeeWare project. 
+
+Discovering that writing ios apps in Python is still a relatively new field. May have to learn Swift.
