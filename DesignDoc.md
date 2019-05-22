@@ -14,6 +14,8 @@ Commercialization, or expansion beyond a simple tracking app.
 
 ## Milestones
 June 1 - Propose language and tools that will be used to create the app.
+*Exploring Kivy/Python solution - May 22*
+
 June 10th - App can read centralized list
 June 30th - App can write to centralized list.
 July 15th - Beta version installed on Treit phones.
@@ -27,3 +29,23 @@ V 1.1 add search feature
 ## Test Cases
 Give to Treits
 Fix probelems they find.
+
+## Use Cases
+### Search for Homonyms
+**Actor** User
+
+**Description** - User looks up a single word and the system returns search result. Search result includes related homonyms.
+
+### Browse Homonyms
+**Actor** User
+
+**Description** - Display a list of the current homonyms in alphabetical order.
+
+### Add Homonyms
+**Actor** User
+
+**Description** - Add homonym sets to list. Sets may be two words or more.
+
+### Add Users
+*Actor* Admin
+*Description* - Add users who can access the list.
