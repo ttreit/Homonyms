@@ -12,6 +12,7 @@
 		A4E9127922AF3B97002DF2F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E9127722AF3B97002DF2F8 /* Main.storyboard */; };
 		A4E9127B22AF3B99002DF2F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E9127A22AF3B99002DF2F8 /* Assets.xcassets */; };
 		A4E9127E22AF3B99002DF2F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E9127C22AF3B99002DF2F8 /* LaunchScreen.storyboard */; };
+		A4E9128722AF3D2B002DF2F8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E9128622AF3D2B002DF2F8 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A4E9127A22AF3B99002DF2F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4E9127D22AF3B99002DF2F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4E9127F22AF3B99002DF2F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E9128622AF3D2B002DF2F8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E9128722AF3D2B002DF2F8 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				A4E9127222AF3B97002DF2F8 /* Homonym Tracker */,
 				A4E9127122AF3B97002DF2F8 /* Products */,
+				A4E9128522AF3D2B002DF2F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				A4E9127F22AF3B99002DF2F8 /* Info.plist */,
 			);
 			path = "Homonym Tracker";
+			sourceTree = "<group>";
+		};
+		A4E9128522AF3D2B002DF2F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4E9128622AF3D2B002DF2F8 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +301,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mammothsound.Homonym-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mammothsound.Homonym-Tracker71";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +319,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mammothsound.Homonym-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mammothsound.Homonym-Tracker71";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
