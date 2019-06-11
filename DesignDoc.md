@@ -26,12 +26,14 @@ June 1 - Propose language and tools that will be used to create the app.
 **Final decision is to write this app in Swift for iOS**
 
 June 1 - Finish Swift Tutorials
+Update: Finished on June 10. Did Swift Essentials Course, then two iOS App tutorials.
 
-June 10th - App can read centralized list
+*June 10th - App can read centralized list*
+*June 30th - App can write to centralized list.*
+Update: June 30th App can take input from user and display input from user.
 
-June 30th - App can write to centralized list.
-
-July 15th - Beta version installed on Treit phones.
+*July 15th - Beta version installed on Treit phones.*
+Update: App can store and retrieve data in a central cloud based repository
 
 August 1 - v 1.0 tested and shipped
 
