@@ -61,6 +61,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="viewSetWords" destination="d3f-NN-oeM" id="qNv-oT-OH1"/>
                         <outlet property="wordToAddField" destination="YoP-h1-J3G" id="mWR-Gy-rbw"/>
                     </connections>
                 </viewController>

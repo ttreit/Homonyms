@@ -14,6 +14,7 @@ var homonymArray = [Set<String>]()
 
 class ViewController: UIViewController {
     @IBOutlet weak var wordToAddField: UITextField!
+    @IBOutlet weak var viewSetWords: UITextView!
     
     
     override func viewDidLoad() {
@@ -22,10 +23,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addItem(_ sender: Any) {
+        if let text = wordToAddField.text, text != "" {
+            viewSetWords.text.append("\(text)\n")
+        }
+        
         wordToAdd = wordToAddField.text ?? ""
         homonymSet.insert(wordToAdd)
         print(homonymSet)
-        //wordToAddField.resignFirstResponder()
+        wordToAddField.resignFirstResponder()
+        wordToAddField.text = ""
         
     }
     
@@ -34,6 +40,7 @@ class ViewController: UIViewController {
         print(homonymArray)
         homonymSet = Set<String>()
         print(homonymSet)
+        viewSetWords.text = ""
         
     }
     
