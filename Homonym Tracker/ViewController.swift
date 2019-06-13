@@ -10,6 +10,7 @@ import UIKit
 
 var homonymSet = Set<String>()
 var wordToAdd: String = ""
+var homonymArray = [Set<String>]()
 
 class ViewController: UIViewController {
     @IBOutlet weak var wordToAddField: UITextField!
@@ -24,17 +25,17 @@ class ViewController: UIViewController {
         wordToAdd = wordToAddField.text ?? ""
         homonymSet.insert(wordToAdd)
         print(homonymSet)
-        
+        //wordToAddField.resignFirstResponder()
         
     }
     
-    
-    
-    //func createHomonymSet() {
-        //on click (add button) add member of set to set
-    // }
+    @IBAction func addHomonymSet(_ sender: Any) {
+        homonymArray.append(homonymSet)
+        print(homonymArray)
+        homonymSet = Set<String>()
+        print(homonymSet)
         
+    }
     
-
 }
 
