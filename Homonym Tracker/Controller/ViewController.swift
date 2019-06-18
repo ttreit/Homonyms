@@ -10,7 +10,7 @@ import UIKit
 
 var homonymSet = Set<String>()
 var wordToAdd: String = ""
-var homonyms = [Set<String>]()
+var homonyms = Set<Set<String>>()
 var homonymList = Set<String>()
 
 class ViewController: UIViewController {
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addHomonymSet(_ sender: Any) {
-        homonyms.append(homonymSet)
+        homonyms.insert(homonymSet)
         print ("homonyms: \(homonyms)")
         homonymSet = Set<String>()
         print("homonymSet Clear: \(homonymSet)")
