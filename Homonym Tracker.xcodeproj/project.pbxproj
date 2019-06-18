@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A49A305722B95F6700C4A8B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A49A305622B95F6700C4A8B7 /* Default-568h@2x.png */; };
 		A4E9127422AF3B97002DF2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E9127322AF3B97002DF2F8 /* AppDelegate.swift */; };
 		A4E9127622AF3B97002DF2F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E9127522AF3B97002DF2F8 /* ViewController.swift */; };
 		A4E9127922AF3B97002DF2F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E9127722AF3B97002DF2F8 /* Main.storyboard */; };
 		A4E9127B22AF3B99002DF2F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E9127A22AF3B99002DF2F8 /* Assets.xcassets */; };
 		A4E9127E22AF3B99002DF2F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E9127C22AF3B99002DF2F8 /* LaunchScreen.storyboard */; };
 		A4E9128722AF3D2B002DF2F8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E9128622AF3D2B002DF2F8 /* WebKit.framework */; };
-		A4E9128922AF8DCE002DF2F8 /* HomonymListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E9128822AF8DCE002DF2F8 /* HomonymListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A49A305622B95F6700C4A8B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A4E9127022AF3B97002DF2F8 /* Homonym Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homonym Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E9127322AF3B97002DF2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4E9127522AF3B97002DF2F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		A4E9127D22AF3B99002DF2F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4E9127F22AF3B99002DF2F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E9128622AF3D2B002DF2F8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		A4E9128822AF8DCE002DF2F8 /* HomonymListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomonymListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,9 +40,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A49A305222B95A2A00C4A8B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4E9127722AF3B97002DF2F8 /* Main.storyboard */,
+				A4E9127A22AF3B99002DF2F8 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A49A305322B95A4000C4A8B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A49A305422B95A4800C4A8B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4E9127322AF3B97002DF2F8 /* AppDelegate.swift */,
+				A4E9127522AF3B97002DF2F8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A49A305522B95D9600C4A8B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4E9127C22AF3B99002DF2F8 /* LaunchScreen.storyboard */,
+				A4E9127F22AF3B99002DF2F8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A4E9126722AF3B97002DF2F8 = {
 			isa = PBXGroup;
 			children = (
+				A49A305622B95F6700C4A8B7 /* Default-568h@2x.png */,
 				A4E9127222AF3B97002DF2F8 /* Homonym Tracker */,
 				A4E9127122AF3B97002DF2F8 /* Products */,
 				A4E9128522AF3D2B002DF2F8 /* Frameworks */,
@@ -60,13 +95,10 @@
 		A4E9127222AF3B97002DF2F8 /* Homonym Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				A4E9127322AF3B97002DF2F8 /* AppDelegate.swift */,
-				A4E9127522AF3B97002DF2F8 /* ViewController.swift */,
-				A4E9127722AF3B97002DF2F8 /* Main.storyboard */,
-				A4E9128822AF8DCE002DF2F8 /* HomonymListViewController.swift */,
-				A4E9127A22AF3B99002DF2F8 /* Assets.xcassets */,
-				A4E9127C22AF3B99002DF2F8 /* LaunchScreen.storyboard */,
-				A4E9127F22AF3B99002DF2F8 /* Info.plist */,
+				A49A305422B95A4800C4A8B7 /* Controller */,
+				A49A305322B95A4000C4A8B7 /* Model */,
+				A49A305222B95A2A00C4A8B7 /* View */,
+				A49A305522B95D9600C4A8B7 /* Supporting Files */,
 			);
 			path = "Homonym Tracker";
 			sourceTree = "<group>";
@@ -138,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E9127E22AF3B99002DF2F8 /* LaunchScreen.storyboard in Resources */,
+				A49A305722B95F6700C4A8B7 /* Default-568h@2x.png in Resources */,
 				A4E9127B22AF3B99002DF2F8 /* Assets.xcassets in Resources */,
 				A4E9127922AF3B97002DF2F8 /* Main.storyboard in Resources */,
 			);
@@ -152,7 +185,6 @@
 			files = (
 				A4E9127622AF3B97002DF2F8 /* ViewController.swift in Sources */,
 				A4E9127422AF3B97002DF2F8 /* AppDelegate.swift in Sources */,
-				A4E9128922AF8DCE002DF2F8 /* HomonymListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UL5V6R3XGG;
-				INFOPLIST_FILE = "Homonym Tracker/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Homonym Tracker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UL5V6R3XGG;
-				INFOPLIST_FILE = "Homonym Tracker/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Homonym Tracker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
