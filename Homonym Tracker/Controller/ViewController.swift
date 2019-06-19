@@ -45,12 +45,37 @@ class ViewController: UIViewController {
     }
  
     @IBAction func listHomonyms(_ sender: Any) {
+        for homonymSets in homonyms {
+            print("\n")
+            homonymListView.text.append("\n")
+            
+            for elements in homonymSets {
+            print("\(elements)")
+                if let text: String = elements {
+                    homonymListView.text.append("\(text)\n")
+                    
+                }
+                
+                /*
+                 if let text = wordToAddField.text, text != "" {
+                 viewSetWords.text.append("\(text)\n")
+                 }
+                 
+                 wordToAdd = wordToAddField.text ?? ""
+                 homonymSet.insert(wordToAdd)
+                 print("HomonymSet Create: \(homonymSet)")
+                 wordToAddField.resignFirstResponder()
+                 wordToAddField.text = ""
+                 */
+                
+                
+            }
+      
         
-        print("\(homonyms)")
-        
-    }
+        }
 
     
+    }
+
+
 }
-
-
