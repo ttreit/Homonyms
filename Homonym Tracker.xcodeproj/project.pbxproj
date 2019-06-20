@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -53,7 +53,6 @@
 				78BA6B7EA44939731856A812 /* Pods-Homonym Tracker.debug.xcconfig */,
 				D328A82A548AEAD2C7764AF5 /* Pods-Homonym Tracker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,7 +84,6 @@
 		A49A305522B95D9600C4A8B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A405B12F22BC1F66006BCF1E /* GoogleService-Info.plist */,
 				A4E9127C22AF3B99002DF2F8 /* LaunchScreen.storyboard */,
 				A4E9127F22AF3B99002DF2F8 /* Info.plist */,
 			);
@@ -114,6 +112,7 @@
 		A4E9127222AF3B97002DF2F8 /* Homonym Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				A405B12F22BC1F66006BCF1E /* GoogleService-Info.plist */,
 				A49A305422B95A4800C4A8B7 /* Controller */,
 				A49A305322B95A4000C4A8B7 /* Model */,
 				A49A305222B95A2A00C4A8B7 /* View */,

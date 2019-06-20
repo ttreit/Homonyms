@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        FirebaseApp.configure() //comment this line out if you're using a different DB
+        //comment this out if you're using a different DB
+        FirebaseApp.configure()
+        
         
         // Override point for customization after application launch.
         return true
