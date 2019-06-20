@@ -8,15 +8,13 @@
 
 import UIKit
 
-var homonymSet = Set<String>()
-var wordToAdd: String = ""
-var homonyms = Set<Set<String>>()
-var homonymList = Set<String>()
+var homonymSet = Set<String>()  //holds the sets of words that make up 1 homonym unit
+var homonyms = Set<Set<String>>() //the superset that consists of all of the sets of honomyms
 
 class ViewController: UIViewController {
     @IBOutlet weak var wordToAddField: UITextField!
-    @IBOutlet weak var viewSetWords: UITextView!
-    @IBOutlet weak var homonymListView: UITextView!
+    @IBOutlet weak var viewSetWords: UITextView! //Shows words before they are commited to a set
+    @IBOutlet weak var homonymListView: UITextView! //Shows the complete list of homonyms
     
     
     override func viewDidLoad() {
@@ -24,12 +22,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addItem(_ sender: Any) {
-       if let text = wordToAddField.text, text != "" {
+        //add the word to the view so user can see it
+        if let text = wordToAddField.text {
             viewSetWords.text.append("\(text)\n")
         }
         
-        wordToAdd = wordToAddField.text ?? ""
-        homonymSet.insert(wordToAdd)
+        homonymSet.insert(wordToAddField.text ?? "")
         print("HomonymSet Create: \(homonymSet)")
         wordToAddField.resignFirstResponder()
         wordToAddField.text = ""
@@ -45,6 +43,7 @@ class ViewController: UIViewController {
     }
  
     @IBAction func listHomonyms(_ sender: Any) {
+        homonymListView.text = ""
         for homonymSets in homonyms {
             print("\n")
             homonymListView.text.append("\n")
@@ -56,17 +55,6 @@ class ViewController: UIViewController {
                     
                 }
                 
-                /*
-                 if let text = wordToAddField.text, text != "" {
-                 viewSetWords.text.append("\(text)\n")
-                 }
-                 
-                 wordToAdd = wordToAddField.text ?? ""
-                 homonymSet.insert(wordToAdd)
-                 print("HomonymSet Create: \(homonymSet)")
-                 wordToAddField.resignFirstResponder()
-                 wordToAddField.text = ""
-                 */
                 
                 
             }
