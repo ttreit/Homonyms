@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase //comment this line out if you're using a different DB
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        FirebaseApp.configure() //comment this line out if you're using a different DB
+        
         // Override point for customization after application launch.
         return true
     }
