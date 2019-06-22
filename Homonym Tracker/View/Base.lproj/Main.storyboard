@@ -81,11 +81,17 @@
                                 <rect key="frame" x="244" y="703" width="107" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <action selector="onButtonCreate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogz-pl-Wgj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bi3-b5-eG5">
                                 <rect key="frame" x="278" y="741" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="onButtonLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OlK-8N-wOh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -93,6 +99,8 @@
                     </view>
                     <connections>
                         <outlet property="homonymListView" destination="Le5-yE-vZO" id="RUv-aB-aC5"/>
+                        <outlet property="textFieldEmail" destination="Ask-OQ-To3" id="0Me-9L-itW"/>
+                        <outlet property="textFieldPassword" destination="8RF-Ve-clj" id="n6v-HV-OuF"/>
                         <outlet property="viewSetWords" destination="d3f-NN-oeM" id="qNv-oT-OH1"/>
                         <outlet property="wordToAddField" destination="YoP-h1-J3G" id="mWR-Gy-rbw"/>
                     </connections>

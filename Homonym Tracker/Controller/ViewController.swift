@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 var homonymSet = Set<String>()  //holds the sets of words that make up 1 homonym unit
 var homonyms = Set<Set<String>>() //the superset that consists of all of the sets of honomyms
@@ -15,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var wordToAddField: UITextField!
     @IBOutlet weak var viewSetWords: UITextView! //Shows words before they are commited to a set
     @IBOutlet weak var homonymListView: UITextView! //Shows the complete list of homonyms
+    @IBOutlet weak var textFieldEmail: UITextField!
+    @IBOutlet weak var textFieldPassword: UITextField!
     
     
     override func viewDidLoad() {
@@ -54,16 +57,19 @@ class ViewController: UIViewController {
                     homonymListView.text.append("\(text)\n")
                     
                 }
-                
-                
-                
             }
-      
-        
         }
-
-    
     }
 
-
+    @IBAction func onButtonCreate(_ sender: Any) {
+        if let email = textFieldEmail.text, let password = textFieldPassword.text {
+            Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
+                print (user?.user.email ?? "No Email")
+                print (Auth.auth().currentUser?.uid ?? "No UserID")
+            })
+        }
+    }
+    
+    @IBAction func onButtonLogin(_ sender: Any) {
+    }
 }
