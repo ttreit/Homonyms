@@ -86,9 +86,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bi3-b5-eG5">
-                                <rect key="frame" x="278" y="741" width="38" height="30"/>
+                                <rect key="frame" x="269" y="741" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="999999"/>
                                 <connections>
                                     <action selector="onButtonLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OlK-8N-wOh"/>
                                 </connections>
@@ -98,6 +98,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="btnCreate" destination="Jko-O7-bM0" id="deG-5F-gm5"/>
+                        <outlet property="btnLogin" destination="Bi3-b5-eG5" id="jPN-NN-Tuw"/>
                         <outlet property="homonymListView" destination="Le5-yE-vZO" id="RUv-aB-aC5"/>
                         <outlet property="textFieldEmail" destination="Ask-OQ-To3" id="0Me-9L-itW"/>
                         <outlet property="textFieldPassword" destination="8RF-Ve-clj" id="n6v-HV-OuF"/>

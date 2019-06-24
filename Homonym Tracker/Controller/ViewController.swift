@@ -19,10 +19,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
     
+    @IBOutlet weak var btnCreate: UIButton!
+    @IBOutlet weak var btnLogin: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    // TO DO - add functionality to check if user is logged in or not and change login button appropriately
+    
 
     @IBAction func addItem(_ sender: Any) {
         //add the word to the view so user can see it
@@ -71,5 +75,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onButtonLogin(_ sender: Any) {
+        if Auth.auth().currentUser == nil {
+            if let email = textFieldEmail.text, let password = textFieldPassword.text {
+                Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
+                    if error == nil {
+                        self.btnLogin.setTitle("Logout", for: .normal)
+                    }
+                    
+                })
+            }
+        }
+        else {
+            do {
+                try Auth.auth().signOut()
+                self.btnLogin.setTitle("Login", for: .normal)
+            }
+            catch {}
+            
+        }
     }
 }
