@@ -24,9 +24,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        if Auth.auth().currentUser == nil {
+            btnLogin.setTitle("Login", for: .normal)
+        }
     }
-    // TO DO - add functionality to check if user is logged in or not and change login button appropriately
-    
+   
 
     @IBAction func addItem(_ sender: Any) {
         //add the word to the view so user can see it
