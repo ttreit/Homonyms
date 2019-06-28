@@ -80,9 +80,6 @@ class ViewController: UIViewController {
                     alert.addAction(action)
                     self.present(alert, animated: true, completion: nil)
                     
-        
-                
-                print("password is too short")
                 }
                 
                 print (user?.user.email ?? "No Email")
