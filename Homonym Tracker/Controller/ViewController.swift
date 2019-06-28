@@ -75,8 +75,13 @@ class ViewController: UIViewController {
         if let email = textFieldEmail.text, let password = textFieldPassword.text {
             Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                 if password.count < 6 {
+                    let alert = UIAlertController(title: "Oops!", message: "Passwords must be at least six characters long.", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "Close", style: .default, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion: nil)
                     
-                //TO DO replace with alert code
+        
+                
                 print("password is too short")
                 }
                 
