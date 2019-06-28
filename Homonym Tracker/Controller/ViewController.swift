@@ -18,15 +18,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var homonymListView: UITextView! //Shows the complete list of homonyms
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
-    
     @IBOutlet weak var btnCreate: UIButton!
     @IBOutlet weak var btnLogin: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+//set the initial button text depending on whether a user is currently logged in or not.
         if Auth.auth().currentUser == nil {
             btnLogin.setTitle("Login", for: .normal)
+        } else {
+            btnLogin.setTitle("Logout", for: .normal)
         }
     }
    
@@ -36,6 +38,7 @@ class ViewController: UIViewController {
         if let text = wordToAddField.text {
             viewSetWords.text.append("\(text)\n")
         }
+    
         
         homonymSet.insert(wordToAddField.text ?? "")
         print("HomonymSet Create: \(homonymSet)")
@@ -71,8 +74,17 @@ class ViewController: UIViewController {
     @IBAction func onButtonCreate(_ sender: Any) {
         if let email = textFieldEmail.text, let password = textFieldPassword.text {
             Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
+                if password.count < 6 {
+                    
+                //TO DO replace with alert code
+                print("password is too short")
+                }
+                
                 print (user?.user.email ?? "No Email")
                 print (Auth.auth().currentUser?.uid ?? "No UserID")
+                self.textFieldEmail.text = ""
+                self.textFieldPassword.text = ""
+        
             })
         }
     }
