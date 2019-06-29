@@ -30,15 +30,19 @@ Update: Finished on June 10. Did Swift Essentials Course, then two iOS App tutor
 
 *June 10th - App can read centralized list*
 *June 30th - App can write to centralized list.*
-Update: June 30th App can take input from user and display input from user.
+
+Updated Milestone: June 30th App can take input from user and display input from user. Complete.
 
 *July 15th - Beta version installed on Treit phones.*
-Update: App can store and retrieve data in a central cloud based repository
 
-August 1 - v 1.0 tested and shipped
+Updated Milestone for July 15: App can store and retrieve data in a central cloud based repository
+
+*August 1 - v 1.0 tested and shipped*
+
+Updated August 1st Milestone - Sideloaded onto Treit phones for testing
 
 ## Proposed Solution
-V 1.0 Create an app that will read the stored  homonym list and can display an alphabetical list of all discovered homonyms. 
+V 1.0 Create an app that will read the stored homonym list and can display an alphabetical list of all discovered homonyms. 
 
 V 1.1 add search feature
 
@@ -65,7 +69,7 @@ V 1.1 add search feature
 
 ## Test Cases
 Give to Treits
-Fix probelems they find.
+Fix problems they find.
 
 ---
 ## Development Tools Decisions
