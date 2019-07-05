@@ -38,9 +38,10 @@ class ViewController: UIViewController {
         if let text = wordToAddField.text {
             viewSetWords.text.append("\(text)\n")
         }
-    
-        
-        homonymSet.insert(wordToAddField.text ?? "")
+        // trim spaces from beginning and end of submitted words
+        var trimmed: String = wordToAddField.text ?? ""
+        trimmed = trimmed.trimmingCharacters(in: .whitespacesAndNewlines)
+        homonymSet.insert(trimmed)
         print("HomonymSet Create: \(homonymSet)")
         wordToAddField.resignFirstResponder()
         wordToAddField.text = ""
